@@ -4,7 +4,75 @@
  * ref：https://v1.vuepress.vuejs.org/zh/config/#palette-styl
  */
 
-$accentColor = #3eaf7c
+// .vuepress > styles > palette.styl
+
+// colors - light theme
+$accentColor = #005FAC
 $textColor = #2c3e50
 $borderColor = #eaecef
 $codeBgColor = #282c34
+$arrowBgColor = #ccc
+$bodyBgColor = #fff
+$badgeTipColor = #e7f1ec
+$badgeWarningColor = #f8f2d1
+$badgeErrorColor = #ffdadc
+
+// colors - dark theme
+$accentColorDark = #005FAC
+$textColorDark = #e2e1db
+$borderColorDark = #4c525c
+$codeBgColorDark = #1a1c22
+$arrowBgColorDark = #555
+$bodyBgColorDark = #25262b
+$badgeTipColorDark = #1b4b35
+$badgeWarningColorDark = #574e21
+$badgeErrorColorDark = #692025
+
+// layout
+$navbarHeight = 3.6rem
+$sidebarWidth = 20rem
+$contentWidth = 940px
+$homePageWidth = 960px
+
+// responsive breakpoints
+$MQNarrow = 959px
+$MQMobile = 719px
+$MQMobileNarrow = 419px
+
+$themeFont = "https://fonts.googleapis.com/css?family=Roboto+Mono|Montserrat&display=swap"
+$bodyFontFamily = "Montserrat"
+$monoFontFamily = "Montserrat"
+$bodyFontSize = 18px
+
+$fallbackTheme = 'light'
+
+:root {
+    --c-brand: #1565C0;
+    --c-brand-light: #2196F3;
+    --c-brand-dark: #0D47A1;
+}
+
+:root {
+    --vp-c-bg: var(--vp-c-white);
+    --vp-c-bg-soft: var(--vp-c-white-soft);
+    --vp-c-bg-mute: var(--vp-c-white-mute);
+    --vp-c-bg-code-highlight: var(--vp-c-gray-dark-6);
+    --vp-c-divider: var(--vp-c-divider-light-1);
+    --vp-c-divider-light: var(--vp-c-divider-light-2);
+    --vp-c-divider-inverse: var(--vp-c-divider-dark-1);
+    --vp-c-divider-inverse-light: var(--vp-c-divider-dark-2);
+    --vp-c-text-1: var(--vp-c-text-light-1);
+    --vp-c-text-2: var(--vp-c-text-light-2);
+    --vp-c-text-3: var(--vp-c-text-light-3);
+    --vp-c-text-4: var(--vp-c-text-light-4);
+    --vp-c-text-code: var(--vp-c-text-light-code);
+    --vp-c-text-inverse-1: var(--vp-c-text-dark-1);
+    --vp-c-text-inverse-2: var(--vp-c-text-dark-2);
+    --vp-c-text-inverse-3: var(--vp-c-text-dark-3);
+    --vp-c-text-inverse-4: var(--vp-c-text-dark-4);
+    --vp-c-brand: var(--c-brand);
+    --vp-c-brand-light: var(--c-brand-light);
+    --vp-c-brand-dark: var(--c-brand-dark);
+    --vp-c-brand-highlight: var(--c-brand-dark);
+    --vp-c-page-edit-text: var(--vp-c-black-pure);
+}
