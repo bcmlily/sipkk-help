@@ -1,0 +1,19 @@
+{
+  "name": "sipkk-help",
+  "version": "0.0.1",
+  "description": "sipkk-help repo",
+  "main": "index.js",
+  "authors": {
+    "name": "briliana",
+    "email": "cahyabriliana@gmail.com"
+  },
+  "repository": "https://github.com/bcmlily/sipkk-help.git/sipkk-help",
+  "scripts": {
+    "dev": "vuepress dev src --port 3000",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
