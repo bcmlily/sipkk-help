@@ -1,7 +1,7 @@
 const { description } = require('../../package')
 
 module.exports = {
-  title: 'SIPKK',
+  title: 'SIPKKK',
   description: description,
 
   head: [
@@ -50,7 +50,7 @@ module.exports = {
       }
     ],
     sidebar: {
-      '/': [
+      "/": [
         {
           title: "",
           collapsable: false,
@@ -58,31 +58,46 @@ module.exports = {
           children: [["/", "Home"]]
         },
         {
-          title: 'Getting Started',
-          collapsable: true,
+          title: "",
+          collapsable: false,
+          sidebarDepth: 1,
           children: [
-            '/guide/introduction', // Contoh file panduan
-            '/guide/installation', // Contoh file instalasi
+            ["/introduction", "Aplikasi SIMKA"],
+            ["/info/toc", "📋 Daftar Isi"],
+            ["/pengantar", "🙏 Kata Pengantar"]]
+        },
+        {
+          title: "Informasi",
+          collapsable: false,
+          sidebarDepth: 1,
+          children: [
+            ["/info/level", "👤 Level User"],
+            ["/info/umum", "ℹ️ Informasi Umum"],
+            ["/info/definisi", "🔡 Definisi dan Pengertian"],
+            ["/info/langkah", "📑 Langkah Awal"],
+            ["/info/faq", "❓FAQ"],
           ]
         },
         {
-          title: 'Features',
-          collapsable: true,
-          children: [
-            '/features/feature1',
-            '/features/feature2',
-          ]
-        }
-      ],
-      '/docs/': [
-        {
-          title: 'Documentation',
+          title: "Dokumentasi",
           collapsable: false,
+          sidebarDepth: 1,
           children: [
-            'introduction', // Tambahkan entry ini
-            'setup', // File setup tambahan
+            ["/docs/awal", "📄 Awal Konfigurasi"],
+            ["/docs/pm", "💻 BMN Peralatan dan Mesin"],
+            ["/docs/gedung", "🏢 BMN Gedung"],
+            ["/docs/kendaraan", "🚗 BMN Kendaraan"],
+            ["/docs/runeg", "🏠 BMN Rumah Negara"],
+            ["/docs/kabkota", "🧭 Kab/Kota Layanan"],
+            ["/docs/unduh", "🔽 Unduh Dokumen"]
           ]
-        }
+        },
+        {
+          title: 'Pusat Bantuan',
+          path: '/bantuan',
+          collapsable: false,
+          sidebarDepth: 1,
+        },
       ]
     }
   },
