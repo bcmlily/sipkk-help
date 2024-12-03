@@ -1,7 +1,7 @@
 const { description } = require('../../package')
 
 module.exports = {
-  title: 'SIPKKK',
+  title: 'SIPKK V 4.0',
   description: description,
 
   head: [
@@ -58,13 +58,15 @@ module.exports = {
           children: [["/", "Home"]]
         },
         {
-          title: "",
+          title: "Pengenalan",
           collapsable: false,
           sidebarDepth: 1,
           children: [
-            ["/introduction", "Aplikasi SIMKA"],
-            ["/info/toc", "📋 Daftar Isi"],
-            ["/pengantar", "🙏 Kata Pengantar"]]
+            ["/guide/introduction", "📱Aplikasi SIPKK"],
+            ["/guide/dfr", "📋 Daftar Isi"],
+            ["/guide/pengantar", "🙌 Kata Pengantar"],
+          
+          ]
         },
         {
           title: "Informasi",
