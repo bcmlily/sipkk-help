@@ -74,7 +74,6 @@ module.exports = {
           sidebarDepth: 1,
           children: [
             ["/info/level", "👤 Level User"],
-            ["/info/umum", "ℹ️ Informasi Umum"],
             ["/info/definisi", "🔡 Definisi dan Pengertian"],
             ["/info/langkah", "📑 Langkah Awal"],
             ["/info/faq", "❓FAQ"],
@@ -95,16 +94,28 @@ module.exports = {
           ]
         },
         {
-          title: 'Pusat Bantuan',
-          path: '/bantuan',
+          title: "Modul Tagihan",
           collapsable: false,
-          sidebarDepth: 1,
+          sidebarDepth: 2,
+          children: [
+            ["/docs/tagihan1", "📑 Modul Tagihan UP TUP LS"],
+            ["/docs/tagihan1", "📑 Modul Tagihan GUP GUPn PTUP"],         
+          ]
         },
+        {
+          title: "Modul Tagihan Pajak",
+          collapsable: false,
+          sidebarDepth: 2,
+          children: [
+            ["/info/level", "📑 "],         
+          ]
+        }
       ]
     }
   },
   plugins: [
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
+    '@vuepress/plugin-toc'
   ]
 }
